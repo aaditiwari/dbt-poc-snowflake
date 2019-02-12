@@ -1,0 +1,7 @@
+# add dependencies. these will get pulled during the `dbt deps` process.
+
+packages:
+  - git: "https://github.com/aaditiwari/dbt-poc-snowflake.git"
+    revision: master # tag or branch name
+    
+  - local: /opt/dbt/snowflake # use a local path
