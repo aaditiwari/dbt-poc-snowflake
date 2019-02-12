@@ -4,4 +4,4 @@ packages:
   - git: "https://github.com/aaditiwari/dbt-poc-snowflake.git"
     revision: master # tag or branch name
     
-  - local: /opt/dbt/snowflake # use a local path
+ 
