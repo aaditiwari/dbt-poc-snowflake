@@ -1,0 +1,11 @@
+
+name: 'propertyhub_poc'
+version: '1.0'
+
+profile: 'propertyhub'
+
+source-paths: ["models"]
+
+models:
+    enabled: true        
+    materialized: view
