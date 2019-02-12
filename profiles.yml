@@ -1,0 +1,42 @@
+config:
+    send_anonymous_usage_stats: True
+    use_colors: True
+
+propertyhub:
+    # default target is dev unless changed at run time
+    target: dev                   
+    outputs:
+        dev:                      # specify the dev connection
+            type: snowflake
+            threads: 1
+            # the url prefix for your snowflake connection
+            account: https://asps.snowflakecomputing.com     
+                                                             
+            user: Atiwari
+            password: Aadi2001
+            # optional, the snowflake role you want to use when connecting
+            role: SYSADMIN        
+            database: PH_POC
+            warehouse: PH_POC_WH
+            schema: PH_DEV     
+            #client_session_keep_alive: False
+
+#propertyhub:
+#  target: dev
+#  outputs:
+#    dev:
+#      type: postgres
+#      host: localhost
+#      user: postgres
+#      pass: admin
+#      port: 5432
+#      dbname: postgres
+#      schema: public
+#      threads: 1            
+#
+# You can switch between profiles and targets on the command line. All of the
+# following are valid ways to invoke dbt run/test/compile/etc
+#
+# $ dbt run --profile propertyhub
+# $ dbt run --profile propertyhub --target dev
+# $ dbt run --profile propertyhub --target prod
