@@ -10,10 +10,10 @@ propertyhub:
             type: snowflake
             threads: 1
             # the url prefix for your snowflake connection
-            account: https://asps.snowflakecomputing.com     
+            account: asps     
                                                              
-            user: Atiwari
-            password: Aadi2001
+            user: A******
+            password: A*******
             # optional, the snowflake role you want to use when connecting
             role: SYSADMIN        
             database: PH_POC
